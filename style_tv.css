@@ -1,0 +1,71 @@
+.topbar {
+    height: 2.5vw;
+    width: 100%;
+    background: #2F3E42;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.device-id {
+    flex: 1; /* Takes up available space */
+    font-size: 0.5vw;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tv-name {
+    flex: 7; /* Takes up available space */
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: bold;
+}
+
+.date-time {
+    flex: 1; /* Takes up available space */
+    text-align: right;
+    font-size: 0.5vw;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+}
+
+#live-clock {
+    margin-bottom: 2px; /* Adjust the margin as needed */
+    display: block;
+    font-weight: 700;
+}
+
+#live-date {
+    display: block;
+    color: #55F48B;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 927px), (max-height: 565px) {
+    .topbar {
+        height: 30px;
+    }
+
+    .device-id {
+        font-size: 7px;
+    }
+
+    .tv-name {
+        flex: 3;
+        font-size: 12px;
+    }
+
+    .date-time {
+        font-size: 7px;
+    }
+}
